@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>ACADEMY PORTAL</title>
+		
+		<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#user1" ).datepicker();
+  } );
+  </script>
+		
+		<style>
+			body{
+				background-image: url("107.jpg");
+				background-attachment: fixed;
+			}
+			#container{
+				height:90%;
+				width:100%;
+				margin:5px;
+				opacity: 0.7;
+				filter: alpha(opacity=70);
+				float:right;
+			}
+			header {
+				background-color: #666;
+				padding: 30px;
+				text-align: center;
+				font-size: 35px;
+				color: white;
+			}
+
+		</style>
+	</head>
+	<body>
+		<div id="container">
+			<header>ACADEMY PORTAL</header>
+			<div>
+								<br><br>
+				<form method="POST" action="./BatchAllocServlet" align="center">
+				<table cellpadding="12" align="center"style="border:2px solid black;">
+					<caption style="color:black"><h2>Batch Allocation</h2></caption>
+					<div>
+					<tr>
+						<th> Batch id : </th>
+						<td><input type="text" size="25" placeholder="asdfgh@xyz" name="bid" id="user"></td>
+					</tr>
+					<tr>
+						<th> Faculty id : </th>
+						<td><input type="text" size="25" placeholder="asdfgh@xyz" name="fid" id="user"></td>
+					</tr>
+					<tr>
+						<th> Start date : </th>
+						<td><input type="text" size="25" placeholder="dd/mm/yy" name="sdate" id="user1"></td>
+					</tr>
+					<tr>
+						<th> End date : </th>
+						<td><input type="text" size="25" placeholder="dd/mm/yy" name="edate" id="user1"></td>
+					</tr>
+					
+					
+					<tr>
+						<th colspan="2">
+						<input type="submit" value="Submit" id="submit" >
+						<hr color="red" size="2">
+						home <a href="index.html"> click here </a>
+						</th>
+					</tr>
+					</div>
+				</table>
+			</form>
+			</div>
+		</div>
+	</body>
+</html>
